@@ -1,0 +1,52 @@
+header {
+  background-color: #e76f51;
+  border: 10px solid #e76f51;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
+body {
+  background-color: #264653;
+  text-align: center;
+}
+h3 {
+  background-color: #e9c46a;
+  font-size: 24px;
+  padding: 30px;
+}
+
+li {
+  list-style: none;
+  color: #ffffffac;
+  font-size: 30px;
+}
+figcaption {
+  color: #f0f8ffd7;
+  font-size: 32px;
+}
+img {
+  padding: 30px;
+  background-color: #f4a261;
+}
+.loves {
+  margin-top: 100px;
+}
+.form {
+    background-color: #e76f51;
+}
+form {
+
+  text-align: center;
+  display: inline-block;
+}
+footer {
+  background-color: #2a9d8f;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}

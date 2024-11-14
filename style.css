@@ -3,13 +3,19 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background-color: #002d67;
+}
 /* Nav */
 nav {
   display: flex; /* 1 */
   justify-content: space-between; /* 2 */
   padding: 1rem 2rem; /* 3 */
   background: #0b3c7a; /* 4 */
+  /* position: fixed;
+  top: -20;
+  left: 0; */
+  z-index: 1;
 }
 
 nav ul {
@@ -26,9 +32,11 @@ nav a {
   color: #fff;
 }
 
-nav h2 {
+nav h2 a {
+  font-size: 24px;
   color: #fff;
 }
+
 /* footer */
 a {
   font-size: 1.15rem;
@@ -86,12 +94,42 @@ footer {
   transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   text-align: center;
+}
+
+#aboutDCard .card-front {
+  background-color: #e76f51;
+  color: black;
+}
+
+#zombiesCard .card-front {
+  background-color: #103a52;
+  color: black;
+}
+
+#zombiesCard .card-back a,
+#cafeCard .card-back a,
+#aboutDCard .card-back a {
+  color: white;
+  text-decoration: none;
+}
+
+#zombiesCard .card-back a:hover,
+#cafeCard .card-back a:hover,
+#aboutDCard .card-back a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+#cafeCard .card-front {
+  background-color: burlywood;
+  color: black;
 }
 
 .card-front {
