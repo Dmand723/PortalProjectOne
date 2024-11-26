@@ -103,7 +103,7 @@ footer {
   text-align: center;
 }
 
-#aboutDCard .card-front {
+/* #aboutDCard .card-front {
   background-color: #e76f51;
   color: black;
 }
@@ -130,21 +130,26 @@ footer {
 #cafeCard .card-front {
   background-color: burlywood;
   color: black;
-}
+} */
 
 .card-front {
-  background-color: #e9e9e9;
-  color: #333;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .card-back {
-  background-color: #333;
-  color: #fff;
+  background-color: black;
   transform: rotateY(180deg);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.card-back a {
+  text-decoration: none;
+  color: white;
+}
+.card-back a:hover {
+  color: gray;
 }
