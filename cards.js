@@ -7,6 +7,7 @@ function Card(title, link, bgColor = "white") {
   this.title = title;
   this.url = link;
   this.bgColor = bgColor;
+  cards.push(this);
 }
 //create card elemets
 const dawsonApp = new Card(
@@ -24,10 +25,26 @@ const cafeMenu = new Card(
   "https://dmand723.github.io/CoffeeMenu/",
   "burlywood"
 );
-//push cards to cards array
-cards.push(dawsonApp);
-cards.push(zombiesClub);
-cards.push(cafeMenu);
+const businessPage = new Card(
+  "Business Page",
+  "https://dmand723.github.io/RestaurantsPage/",
+  "#f4acb7"
+);
+const memoryGame = new Card(
+  "Memory Game Website",
+  "https://dmand723.github.io/MemoryGame/",
+  "#1c7ccc"
+);
+const quizApp = new Card(
+  "Quiz Application Website",
+  "https://dmand723.github.io/QuizApplication/",
+  "#004466"
+);
+const buttonApp = new Card(
+  "Fun Button App",
+  "https://dmand723.github.io/JS_ButtonProject/",
+  "gray"
+);
 //crete cards on portal
 cards.map((item) => {
   //create main card div
